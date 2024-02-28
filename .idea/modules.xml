@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/oauhrunner.iml" filepath="$PROJECT_DIR$/oauhrunner.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android/oauhrunner_android.iml" filepath="$PROJECT_DIR$/android/oauhrunner_android.iml" />
+    </modules>
+  </component>
+</project>
