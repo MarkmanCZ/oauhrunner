@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:oauhrunner/screens/add_event.dart';
+import 'package:oauhrunner/screens/settings.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -31,7 +32,7 @@ class _HomeScreenState extends State<HomeScreen> {
             padding: const EdgeInsets.symmetric(horizontal: 16),
             child: IconButton(
               onPressed: () {
-                Fluttertoast.showToast(msg: "TESTST");
+                Navigator.of(context).push(MaterialPageRoute(builder: (context) => const SettingsScreen()));
               }, 
               icon: const Icon(Icons.more_vert))
           ),
