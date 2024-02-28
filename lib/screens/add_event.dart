@@ -27,7 +27,6 @@ class _AddEventScreenState extends State<AddEventScreen> {
         _selectedDate = picked;
       });
     }
-      
   }
 
   @override
@@ -63,7 +62,7 @@ class _AddEventScreenState extends State<AddEventScreen> {
                 Expanded(
                   child: Text(
                     "${_selectedDate.toLocal()}".split(' ')[0],
-                    style: TextStyle(fontSize: 16.0),
+                    style: const TextStyle(fontSize: 16.0),
                   ),
                 ),
                 const SizedBox(width: 20.0),
