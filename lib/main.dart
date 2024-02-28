@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:oauhrunner/screens/home_page.dart';
+import 'package:oauhrunner/utils/shared_prefs.dart';
 
-void main() {
+Future<void> main() async {
+  await sharedPrefs.init();
+
   runApp(const MainApp());
 }
 
