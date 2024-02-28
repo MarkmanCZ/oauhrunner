@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:oauhrunner/models/run.dart';
+import 'package:oauhrunner/utils/run_db.dart';
 
 class AddEventScreen extends StatefulWidget {
   const AddEventScreen({super.key});
@@ -31,10 +32,14 @@ class _AddEventScreenState extends State<AddEventScreen> {
   }
 
   void addRun() async {
-    final run = Run(title.text, start.text, end.text, _selectedDate);
+    final run = Run(null, title.text, start.text, end.text, _selectedDate);
     
+    RunDB().create(run);
     setState(() {
       _selectedDate = DateTime.now();
+      title.text = "";
+      start.text = "";
+      end.text = "";
     });
   }
 
